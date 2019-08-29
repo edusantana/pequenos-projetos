@@ -22,7 +22,7 @@ def imprimeHorario():
     print(datetime.now())
 
 def verificaOsArquivos(caminho):
-    
+
     print("Pesquisando arquivos em: ", caminho)
 
     arquivos = []
@@ -37,3 +37,8 @@ imprimeNome()
 imprimeHorario()
 arquivos = verificaOsArquivos(CAMINHO_DO_DIRETORIO)
 print("Total de arquivos: ", len(arquivos))
+
+relatorio = open(os.environ['HOME'] + "/relatorio.txt", "a")
+relatorio.write("Total de arquivos: ")
+relatorio.write(str(len(arquivos)))
+relatorio.close()
