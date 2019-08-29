@@ -12,6 +12,10 @@ from datetime import datetime
 
 CAMINHO_DO_DIRETORIO = os.environ['HOME'] + '/Downloads'
 
+def imprimeNome():
+    # imprimir seu nome aqui.
+    pass
+
 def imprimeHorario():
     data_atual = date.today()
     print(data_atual)
