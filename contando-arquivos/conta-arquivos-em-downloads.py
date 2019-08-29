@@ -33,6 +33,7 @@ def verificaOsArquivos(caminho):
     return arquivos
 
 
+imprimeNome()
 imprimeHorario()
 arquivos = verificaOsArquivos(CAMINHO_DO_DIRETORIO)
 print("Total de arquivos: ", len(arquivos))
