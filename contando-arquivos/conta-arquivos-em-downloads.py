@@ -38,7 +38,7 @@ imprimeHorario()
 arquivos = verificaOsArquivos(CAMINHO_DO_DIRETORIO)
 print("Total de arquivos: ", len(arquivos))
 
-relatorio = open(os.environ['HOME'] + "/relatorio.txt", "a")
+relatorio = open(os.environ['HOME'] + "/relatorio.txt", "w")
 
 relatorio.write(str(datetime.now()) + "\n")
 relatorio.write("Total de arquivos: ")
