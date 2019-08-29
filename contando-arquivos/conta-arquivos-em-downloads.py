@@ -39,6 +39,8 @@ arquivos = verificaOsArquivos(CAMINHO_DO_DIRETORIO)
 print("Total de arquivos: ", len(arquivos))
 
 relatorio = open(os.environ['HOME'] + "/relatorio.txt", "a")
+
+relatorio.writeln(datetime.now())
 relatorio.write("Total de arquivos: ")
 relatorio.write(str(len(arquivos)))
 relatorio.close()
