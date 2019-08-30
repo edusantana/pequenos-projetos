@@ -2,7 +2,7 @@ import click
 
 @click.command()
 @click.option('--liga/--desliga', help="Liga ou desliga")
-@click.option('--boca', 'boca', type=int,help="Número da boca do fogão a ser ligada, ex: 3")
+@click.option('--boca', 'boca', type=int,help="Numero da boca do fogao a ser ligada, ex: 3")
 @click.option('-i','--intensidade',  'intensidade', help="Intensidade: baixo|medio|alto", default="medio")
 def hello(liga, boca, intensidade):
     if liga:
