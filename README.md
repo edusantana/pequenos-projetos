@@ -1,15 +1,19 @@
 # pequenos-projetos
 
-## cli
+## cli/click/fogao.py
 
-Para aprender sobre cli e comandos de linhas.
+Para aprender sobre cli e invocação de comandos de linhas com parâmetros.
 
-Alternativas de implementação:
+    pip install click --user
+    cd cli/click
+    python fogao.py --help
 
 - [click](http://click.pocoo.org)
-- [fire](https://github.com/google/python-fire)
 
-Vamos criar ferramentas que auxiliem a 
+## contando-arquivos/conta-arquivos-em-downloads.py
 
-Outras referências:
-- [Referências](https://github.com/edusantana/pequenos-projetos/issues/1)
+Para aprender agendamento de tarefas com crontab.
+
+Ao executá-lo o arquivo `relatorio.txt` é criado dentro da pasta Downloads, contendo a hora da execução e a quantidade de arquivos que estão dentro da pasta.
+
+Ao agendar sua execução podemos verificar sua execução abrindo o arquivo `relatorio.txt` e inspecionando seu conteúdo.
