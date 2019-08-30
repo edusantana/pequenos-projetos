@@ -12,10 +12,6 @@ from datetime import datetime
 
 CAMINHO_DO_DIRETORIO = os.environ['HOME'] + '/Downloads'
 
-def imprimeNome():
-    # imprimir seu nome aqui.
-    pass
-
 def imprimeHorario():
     data_atual = date.today()
     print(data_atual)
@@ -33,12 +29,11 @@ def verificaOsArquivos(caminho):
     return arquivos
 
 
-imprimeNome()
 imprimeHorario()
 arquivos = verificaOsArquivos(CAMINHO_DO_DIRETORIO)
 print("Total de arquivos: ", len(arquivos))
 
-relatorio = open(os.environ['HOME'] + "/relatorio.txt", "w")
+relatorio = open(CAMINHO_DO_DIRETORIO + "/relatorio.txt", "w")
 
 relatorio.write(str(datetime.now()) + "\n")
 relatorio.write("Total de arquivos: ")
