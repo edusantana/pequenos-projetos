@@ -9,6 +9,8 @@ def hello(liga, boca, intensidade):
         click.secho('Ligando...', fg='green')
         if boca:
             click.echo('boca %s com intensidade %s' % (boca, intensidade))
+        else:
+            click.secho('Faltou especificar a boca %s' % (boca), fg='red')
     else:
         click.secho('Desligando...', fg='red')
         click.echo('boca %s' % (boca))
